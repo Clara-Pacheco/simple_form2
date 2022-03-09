@@ -1,0 +1,56 @@
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+.form-container {
+  margin: 100px auto;
+  width: 400px;
+  /*Sem estabelecer um "WIDTH", ele não irá pegar o margin left e right auto e centralizar, porque como é uma div, e divs são elementos em bloco, eles ocupam a linha toda. Ao setar um width, conseguimos centralizar*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+ 
+}
+.form-container .title {
+  font-weight: 900;
+  margin: 25px;
+}
+
+.form-container .icon-container {
+  margin: 10px;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  right: 5px;
+  top: calc(50% - 12px);
+}
+
+.form-container input {
+  padding-left: 15px;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #C6C6C6;
+  
+}
+
+.form-container input::placeholder {
+  color: #C6C6C6;
+}
+
+.form-container input[type="submit"] {
+  margin-top: 25px;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  left: 75px;
+  
+}
+
